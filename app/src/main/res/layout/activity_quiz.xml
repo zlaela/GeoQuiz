@@ -36,10 +36,36 @@
             android:text="@string/false_button" />
     </LinearLayout>
 
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:id="@+id/quiz_next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_question_button" />
+       <ImageButton
+           android:id="@+id/quiz_previous_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/arrow_left"
+           android:padding="@dimen/activity_horizontal_margin"
+           />
+
+       <Button
+           android:id="@+id/cheat_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/cheat_button"
+           android:layout_marginLeft="@dimen/activity_horizontal_margin"
+           android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+       <ImageButton
+           android:id="@+id/quiz_next_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/arrow_right"
+           android:padding="@dimen/activity_horizontal_margin"
+           />
+
+   </LinearLayout>
+
 </LinearLayout>
